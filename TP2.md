@@ -1,4 +1,4 @@
-#TP2
+# TP2
 
 ## 1. Convention de coding
 
@@ -35,8 +35,14 @@ recherches par mots clés / facettes
 - 1 ou 2 devs pour la partie indexation et bdd
 - 1 dev pour la partie sécurité
 
-### Coûts: 
-- 
+### Coûts : 
+- Cloudinary pour le stockage des photos -> ~250€/mois pour 600Go -> +3000€/an
+- Amazon API Gateway -> ~20€/mois -> 240€/an
+- Amazon DynamoDB -> ~5€/mois -> 60€/an
+- 2 devs -> 2000€/mois -> 24000€/an
+- 1 dev sécu -> 3000€/mois -> 36000€/an
+
+**Total : 63 300€/an** 
 ___
 ## Monitoring
 **WIP**
