@@ -4,6 +4,14 @@ const path = require('path');
 
 const app = express();
 
+const dd_options = {
+  'response_code': true,
+  'tags': ['app:my_app']
+};
+
+const connect_datadog = require('connect-datadog')(dd_options);
+app.use(connect_datadog);
+
 // public assets
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')));
